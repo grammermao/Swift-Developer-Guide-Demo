@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LayoutViewController" customModule="layout_xib" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-eT-yDJ">
+                    <rect key="frame" x="161" y="140" width="52" height="30"/>
+                    <state key="normal" title="Button1"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHQ-rf-5j6">
+                    <rect key="frame" x="60" y="413" width="55" height="30"/>
+                    <state key="normal" title="Button2"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azN-dT-Kve">
+                    <rect key="frame" x="260" y="413" width="55" height="30"/>
+                    <state key="normal" title="Button3"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="azN-dT-Kve" firstAttribute="top" secondItem="aHQ-rf-5j6" secondAttribute="top" id="3Dg-IM-SNI"/>
+                <constraint firstItem="t2O-eT-yDJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="3Ga-7E-R5p"/>
+                <constraint firstItem="t2O-eT-yDJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bho-Zq-CF3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="azN-dT-Kve" secondAttribute="bottom" constant="224" id="E8K-tq-4YV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aHQ-rf-5j6" secondAttribute="bottom" constant="224" id="TLy-Z8-Aft"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="azN-dT-Kve" secondAttribute="trailing" constant="60" id="XlE-VD-SCn"/>
+                <constraint firstItem="aHQ-rf-5j6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="vnt-Gh-c8W"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-283" y="18"/>
+        </view>
+    </objects>
+</document>
